@@ -1,0 +1,35 @@
+.form-button-component {
+  // font-family: "Montserrat", "sans-serif";
+  background: #0082f2;
+  height: 56px;
+  border: none;
+  width: 100%;
+  padding: 16px;
+  border-radius: 4px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+
+  &.small {
+    padding: 4px 12px;
+  }
+  &:disabled {
+    background: #ebebeb;
+    color: #949494;
+  }
+  &.red {
+    background: #da0000;
+  }
+  &.link {
+    font-family: "Noto Sans", sans-serif;
+    background: none;
+    padding: 0px;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: initial;
+  }
+}

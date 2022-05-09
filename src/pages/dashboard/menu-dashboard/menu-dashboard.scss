@@ -1,0 +1,99 @@
+.menu-dashboard-page {
+
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    /* height: 100vh; */
+
+    .menu-dashboard-sidebar {
+        width: 226px;//300px;
+        /* height: 100%; */
+        box-shadow: 0px 0px 16px rgb(153 153 153 / 15%);
+    }
+    .menu-dashboard-title-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        color: #00549D;
+        width: 194px;
+        height: 32px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .menu-dashboard-active {
+        background-color: #EEF6FD;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 32px;
+        font-weight: 600;
+        color: #00549D !important;
+    }
+
+    .menu-dashboard-image {
+        width: 95px;
+        margin: 50px 0px 50px 16px;
+    }
+    .menu-dashboard-content {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+    }
+    .menu-dashboard-subtitle {
+        font-size: 10px;
+        line-height: 16px;
+        color: #777777;
+    }
+    /* .menu-dasboard-content {
+        margin-left: 10px;
+    } */
+    .menu-dasboard-row {
+        margin: 20px 0px 20px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .menu-dasboard-footer {
+        margin-top: auto;
+    }
+    .menu-dasboard-row-footer {
+        border-top: 1px solid #E6E6E6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 60px;
+        align-items: center;
+    }
+    .menu-dasboard-row-footer-close-session {
+        padding-left: 16px;
+        color: red;
+        border-top: 1px solid #E6E6E6;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 60px;
+        align-items: flex-end;
+    }
+    .menu-dashboard-content-page{
+        width: 100%;
+        overflow-y: scroll;
+    }
+    a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #323E45;
+        ;
+    }
+    .iconDashboard{
+        color: #AEC2D3;
+        margin: 0px 10px 0px;
+    }
+
+}

@@ -1,0 +1,48 @@
+{
+    "emptyState.generic.title": "Nada que mostrar",
+    "emptyState.generic.description": "Todavía no hay suficiente información para mostrar las estadísticas, vuelva a consultar más tarde.",
+
+    "login.title": "Inicia sesión",
+    "login.description": "Accesa a tu cuenta",
+    "login.label.email": "CORREO ELECTRÓNICO",
+    "login.label.password": "CONTRASEÑA",
+    "login.link": "¿Olvidaste tu contraseña?",
+    "login.btn": "INICIAR SESIÓN",
+    "login.error": "Correo electrónico o contrasñea incorrectos.",
+
+    "login.auth.tittle": "Autentiación 2 pasos",
+    "login.auth.description": "Proteger tu información es muy importante para nosotros, confirma tu cuenta con el código de autorización enviado a tu correo",
+    "login.auth.label": "CÓDIGO",
+    "login.auth.btn": "VERIFICAR CÓDIGO",
+    "login.auth.reenviar" : "Reenviar código (en 20 segundos)",
+    
+    "recovery.title": "Contraseña olvidada",
+    "recovery.description": "Introduce la dirección de correo electrónico asociada a tu cuenta y te enviaremos un vínculo para restablecer tu contraseña.",
+    "recovery.label.email": "CORREO ELECTRÓNICO",
+    "recovery.label.btn": "REESTABLECER CONTRASEÑA",
+
+    "recovery.alert.tittle": "Correo enviado",
+    "recovery.alert.description": "Revisa tu correo",
+
+    "dashboard.title":"Dashboard",
+    "dashboard.label.subtitle.administrate":"ADMINISTRAR",
+    "dashboard.label.collaborators":"Colaboradores",
+    "dashboard.label.contacts":"Contactos",
+    "dashboard.label.materials":"Materiales",
+    "dashboard.label.templates":"Plantillas (WA)",
+    "dashboard.label.subtitle.plataform":"PLATAFORMA",
+    "dashboard.label.settings":"Configuración",
+    "dashboard.label.singOff":"Cerrar sesión",
+
+    
+    "modal.newCollaborator.title":"Nuevo colaborador",
+    "modal.newCollaborator.title.data":"Datos",
+    "modal.newCollaborator.subTitle.data":"Puntos de contacto con el colaborador",
+    "modal.newCollaborator.label.name":"NOMBRE",
+    "modal.newCollaborator.label.lastName":"APELLIDO",
+    "modal.newCollaborator.label.rol":"ROL",
+    "modal.newCollaborator.label.telephoneNumber":"NÚMERO DE TELÉFONO",
+    "modal.newCollaborator.label.mail":"CORREO ELECTRÓNICO",
+    "modal.newCollaborator.btn.cancel":"CANCELAR",
+    "modal.newCollaborator.btn.save":"GUARDAR COLABORADOR"
+}
