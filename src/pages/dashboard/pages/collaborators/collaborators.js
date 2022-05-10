@@ -1,20 +1,19 @@
-import "./collaborators.scss";
-import Input from "../../../components/input/input";
-import person1 from '../../../assets/images/dashboard/persons-demo/person1.png'
-import person2 from '../../../assets/images/dashboard/persons-demo/person2.png'
-import person3 from '../../../assets/images/dashboard/persons-demo/person3.png'
-import person4 from '../../../assets/images/dashboard/persons-demo/person4.png'
-import person5 from '../../../assets/images/dashboard/persons-demo/person5.png'
+import Input from "../../../../components/input/input";
+import person1 from '../../../../assets/images/dashboard/persons-demo/person1.png'
+import person2 from '../../../../assets/images/dashboard/persons-demo/person2.png'
+import person3 from '../../../../assets/images/dashboard/persons-demo/person3.png'
+import person4 from '../../../../assets/images/dashboard/persons-demo/person4.png'
+import person5 from '../../../../assets/images/dashboard/persons-demo/person5.png'
+import Modals from "../../../../components/modal-structure/modal-structure";
 import * as Icon from 'react-bootstrap-icons';
-import Modals from "../../../components/modal/Modals";
-import Formularios from "../../../components/Formularios";
+import "./collaborators.scss";
+
 
 const Collaborators = () => {
     return (
         <div>
             <Modals />
             <hr />
-            {/* <Formularios /> */}
             <h1>Collaborators</h1>
             <div>
                 <Input
@@ -22,8 +21,9 @@ const Collaborators = () => {
                     type="text"
                     placeholder="Buscar un colaborador..."
                 />
+                
                 <div className="btn-group">
-                    <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" className="btn btn-primary dropdown-toggle btn-colaborator" data-bs-toggle="dropdown" aria-expanded="false">
                         NUEVO COLABORADOR
                     </button>
                     <ul className="dropdown-menu">

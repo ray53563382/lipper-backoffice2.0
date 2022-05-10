@@ -1,15 +1,8 @@
-.login-page {
+.recovery-page {
   position: absolute;
-  // background-color: red;
-  background-image: url("./../../../assets/images/login/mosaic.png");
-  background-repeat: no-repeat;
-  // background-attachment: fixed;
-  background-position: right 0px top 1px;
-  // background-position: right;
   width: 100vw;
   height: 100%;
-  // height: 100vh;
-  .login_link {
+  .recovery_link {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
@@ -23,17 +16,14 @@
     line-height: 32px;
     color: #323e45;
   }
-  .login-tittle {
+  .recovery-tittle {
     margin-top: 40px;
   }
-  .login-input-password {
-    margin-top: 20px;
-  }
-  .login-button {
+  .recovery-button {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-  .login-description {
+  .recovery-description {
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
@@ -42,16 +32,16 @@
     margin-top: 8px;
     margin-bottom: 13px !important;
   }
-  .login-image {
+  .recovery-image {
     width: 95px;
   }
-  .login-template {
+  .recovery-template {
     margin-top: 120px;
     border-radius: 16px;
     height: 584px;
     width: 50%;
   }
-  .login-form {
+  .recovery-form {
     background: #ffffff;
     border-radius: 16px;
     padding: 40px;
@@ -59,16 +49,16 @@
     margin: 0 auto;
   }
   @media (max-width: 1000px) {
-    .login-template {
+    .recovery-template {
       width: 100%;
     }
   }
 
   @media (max-width: 500px) {
-    .login-form {
+    .recovery-form {
       width: 90%;
     }
-    .login-template {
+    .recovery-template {
       margin-top: 78px !important;
     }
   }

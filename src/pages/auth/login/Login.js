@@ -1,8 +1,7 @@
 import TranslateService from "../../../services/translate-service";
 import Input from "../../../components/input/input";
 import Button from "../../../components/button/button";
-import Alert from "../../../components/alert/alert";
-import Logo from '../../../assets/images/login/Logo.png';
+import Logo from "../../../assets/images/login/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -42,34 +41,42 @@ export default function Login() {
 
   return (
     <div className="login-page">
-      <div className="mt-64">
-        <form className="" onSubmit={login}>
-          <img src={Logo} className="login-image"  alt=""/> 
-          <h1 className="heading-h4">{TranslateService.get("login.title")}</h1>
-          <p className="login-description">{TranslateService.get("login.description")}</p>
-
-          <Alert text={TranslateService.get("login.error")}></Alert>
-          <Input
-            className="mb-6"
-            type="email"
-            label={TranslateService.get("login.label.email")}
-            value={form.email}
-            onChange={(event) => handleInput("email", event.target.value)}
-          />
-          <Input
-            className="mb-6"
-            type="password"
-            label={TranslateService.get("login.label.password")}
-            value={form.password}
-            onChange={(event) => handleInput("password", event.target.value)}
-          />
-          {/* {request.errorMessage && <Alert className="mb-6" text={request.errorMessage} /> }                            */}
-          <Button onClick={login} disabled={!form.isValid || request.isSending}>
-            {request.isSending && <FontAwesomeIcon icon={faSpinner} spin={true} />} {TranslateService.get("login.btn")}
-          </Button>
-
-          <a href="/" className="login_link">¿Olvidaste tu contraseña?</a>
-        </form>
+      <div className="login-template">
+        <div className="login-form">
+          <form className="" onSubmit={login}>
+            <img src={Logo} className="login-image" alt="" />
+            <h1 className="heading-h4 login-tittle">{TranslateService.get("login.title")}</h1>
+            <p className="login-description">{TranslateService.get("login.description")}</p>
+            {/* <Alert text={TranslateService.get("login.error")}></Alert> */}
+            <div className="login-input-email">
+              <Input
+                className="mb-6"
+                type="email"
+                label={TranslateService.get("login.label.email")}
+                value={form.email}
+                onChange={(event) => handleInput("email", event.target.value)}
+              />
+            </div>
+            <div className="login-input-password">
+              <Input
+                className="mb-6"
+                type="password"
+                label={TranslateService.get("login.label.password")}
+                value={form.password}
+                onChange={(event) => handleInput("password", event.target.value)}
+              />
+            </div>
+            {/* {request.errorMessage && <Alert className="mb-6" text={request.errorMessage} /> }    */}
+            <div className="login-button">
+              <Button onClick={login} disabled={!form.isValid || request.isSending}>
+                {request.isSending && <FontAwesomeIcon icon={faSpinner} spin={true} />} {TranslateService.get("login.btn")}
+              </Button>
+            </div>
+            <a href="/" className="login_link">
+              ¿Olvidaste tu contraseña?
+            </a>
+          </form>
+        </div>
       </div>
     </div>
   );

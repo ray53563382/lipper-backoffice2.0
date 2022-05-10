@@ -1,6 +1,5 @@
-//import TranslateService from "../../../services/translate-service";
-import Modal from "./Modal"
-import { useModal } from "../../hooks/useModal"
+import Modal from "../modal-body/modal-body.scss"
+import { useModal } from "../../services/modal-open"
 const Modals = () => {
     const [isOpenModal1, openModal1, closeModal1] = useModal(false);
     const [isOpenModal2, openModal2, closeModal2] = useModal(false);
@@ -30,7 +29,7 @@ const Modals = () => {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="exampleInputPassword1">ROL*</label>
-                                <select class="form-select modal-select" aria-label="Default select example">
+                                <select className="form-select modal-select" aria-label="Default select example">
                                     <option selected></option>
                                     <option value="1">Agente</option>
                                     <option value="2">Otro</option>

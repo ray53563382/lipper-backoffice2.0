@@ -1,0 +1,47 @@
+.form-button-dasboard-component {
+  display: inline-block;
+  flex-direction: row;
+  padding: 0px 16px 0px 16px;
+  position: static;
+  border: none;
+  height: 32px;
+  right: 0px;
+  top: 0px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+
+  &.small {
+    padding: 4px 12px;
+  }
+  &:disabled {
+    background: #ebebeb;
+    color: #949494;
+  }
+  &.red {
+    background: #da0000;
+  }
+  &.white {
+    background: white;
+    color: #0082f2;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+  }
+  &.blue {
+    background: #0082f2;
+    color: white;
+  }
+  &.link {
+    font-family: "Noto Sans", sans-serif;
+    background: none;
+    padding: 0px;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: initial;
+  }
+}

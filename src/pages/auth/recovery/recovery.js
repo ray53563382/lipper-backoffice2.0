@@ -5,9 +5,9 @@ import Logo from "../../../assets/images/login/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import "./authSteps.scss";
+import "./recovery.scss";
 
-export default function AuthSteps() {
+export default function Recovery() {
   //VALUES FORM
   const [form, setForm] = useState({
     email: "",
@@ -40,30 +40,30 @@ export default function AuthSteps() {
   };
 
   return (
-    <div className="authSteps-page">
-      <div className="authSteps-template">
-        <div className="authSteps-form">
+    <div className="recovery-page">
+      <div className="recovery-template">
+        <div className="recovery-form">
           <form className="" onSubmit={login}>
-            <img src={Logo} className="authSteps-image" alt="" />
-            <h1 className="heading-h4 authSteps-tittle">{TranslateService.get("login.auth.tittle")}</h1>
-            <p className="authSteps-description">{TranslateService.get("login.auth.description")}</p>
+            <img src={Logo} className="recovery-image" alt="" />
+            <h1 className="heading-h4 recovery-tittle">{TranslateService.get("recovery.title")}</h1>
+            <p className="recovery-description">{TranslateService.get("recovery.description")}</p>
             {/* <Alert text={TranslateService.get("login.error")}></Alert> */}
-            <div className="authSteps-input-email">
+            <div className="recovery-input-email">
               <Input
                 className="mb-6"
                 type="email"
-                label={TranslateService.get("login.auth.label")}
+                label={TranslateService.get("recovery.label.email")}
                 value={form.email}
                 onChange={(event) => handleInput("email", event.target.value)}
               />
             </div>
             {/* {request.errorMessage && <Alert className="mb-6" text={request.errorMessage} /> }    */}
-            <div className="authSteps-button">
+            <div className="recovery-button">
               <Button onClick={login} disabled={!form.isValid || request.isSending}>
-                {request.isSending && <FontAwesomeIcon icon={faSpinner} spin={true} />} {TranslateService.get("login.auth.btn")}
+                {request.isSending && <FontAwesomeIcon icon={faSpinner} spin={true} />} {TranslateService.get("recovery.label.btn")}
               </Button>
             </div>
-            <a href="/" className="authSteps_link">
+            <a href="/" className="recovery">
               {TranslateService.get("login.auth.reenviar")}
             </a>
           </form>

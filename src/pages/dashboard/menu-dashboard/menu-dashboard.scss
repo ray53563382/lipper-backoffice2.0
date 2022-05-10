@@ -8,7 +8,7 @@
     .menu-dashboard-sidebar {
         width: 226px;//300px;
         /* height: 100%; */
-        box-shadow: 0px 0px 16px rgb(153 153 153 / 15%);
+        box-shadow: 1px 0px 0px #E6E6E6;
     }
     .menu-dashboard-title-content {
         display: flex;
@@ -43,7 +43,7 @@
         margin-right: 16px;
         display: flex;
         flex-direction: column;
-        min-height: 80vh;
+        min-height: 62vh;
     }
     .menu-dashboard-subtitle {
         font-size: 10px;
@@ -84,6 +84,8 @@
     .menu-dashboard-content-page{
         width: 100%;
         overflow-y: scroll;
+        background-color: #f9fafb;
+        margin-left: 1px;
     }
     a {
         font-size: 14px;

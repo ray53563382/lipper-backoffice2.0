@@ -5,9 +5,9 @@ import Logo from "../../../assets/images/login/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import "./authSteps.scss";
+import "./setPassword.scss";
 
-export default function AuthSteps() {
+export default function SetPassword() {
   //VALUES FORM
   const [form, setForm] = useState({
     email: "",
@@ -40,31 +40,40 @@ export default function AuthSteps() {
   };
 
   return (
-    <div className="authSteps-page">
-      <div className="authSteps-template">
-        <div className="authSteps-form">
+    <div className="setPassword-page">
+      <div className="setPassword-template">
+        <div className="setPassword-form">
           <form className="" onSubmit={login}>
-            <img src={Logo} className="authSteps-image" alt="" />
-            <h1 className="heading-h4 authSteps-tittle">{TranslateService.get("login.auth.tittle")}</h1>
-            <p className="authSteps-description">{TranslateService.get("login.auth.description")}</p>
+            <img src={Logo} className="setPassword-image" alt="" />
+            <h1 className="heading-h4 setPassword-tittle">{TranslateService.get("password.tittle")}</h1>
+            <p className="setPassword-description">{TranslateService.get("password.description")}</p>
             {/* <Alert text={TranslateService.get("login.error")}></Alert> */}
-            <div className="authSteps-input-email">
+            <div className="setPassword-input-email">
               <Input
                 className="mb-6"
-                type="email"
-                label={TranslateService.get("login.auth.label")}
+                type="password"
+                label={TranslateService.get("password.label.password_1")}
                 value={form.email}
                 onChange={(event) => handleInput("email", event.target.value)}
               />
             </div>
+            <div className="setPassword-input-password">
+              <Input
+                className="mb-6"
+                type="password"
+                label={TranslateService.get("password.label.password_2")}
+                value={form.password}
+                onChange={(event) => handleInput("password", event.target.value)}
+              />
+            </div>
             {/* {request.errorMessage && <Alert className="mb-6" text={request.errorMessage} /> }    */}
-            <div className="authSteps-button">
+            <div className="setPassword-button">
               <Button onClick={login} disabled={!form.isValid || request.isSending}>
-                {request.isSending && <FontAwesomeIcon icon={faSpinner} spin={true} />} {TranslateService.get("login.auth.btn")}
+                {request.isSending && <FontAwesomeIcon icon={faSpinner} spin={true} />} {TranslateService.get("password.btn")}
               </Button>
             </div>
-            <a href="/" className="authSteps_link">
-              {TranslateService.get("login.auth.reenviar")}
+            <a href="/" className="setPassword_link">
+              ¿Olvidaste tu contraseña?
             </a>
           </form>
         </div>

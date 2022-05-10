@@ -20,9 +20,17 @@
     "recovery.description": "Introduce la dirección de correo electrónico asociada a tu cuenta y te enviaremos un vínculo para restablecer tu contraseña.",
     "recovery.label.email": "CORREO ELECTRÓNICO",
     "recovery.label.btn": "REESTABLECER CONTRASEÑA",
-
     "recovery.alert.tittle": "Correo enviado",
     "recovery.alert.description": "Revisa tu correo",
+
+    "password.tittle":"Reestablecer contraseña",
+    "password.description":"Ingresa tu nueva contraseña",
+    "password.label.password_1": "NUEVA CONTRASEÑA",
+    "password.label.password_2": "REPETIR CONTRASEÑA",
+    "password.btn": "REESTABLECER CONTRASEÑA",
+
+    "loader.tittle": "Contraseña reestablecida",
+    "loader.description" : "Iniciando sesión ...",
 
     "dashboard.title":"Dashboard",
     "dashboard.label.subtitle.administrate":"ADMINISTRAR",
@@ -34,6 +42,24 @@
     "dashboard.label.settings":"Configuración",
     "dashboard.label.singOff":"Cerrar sesión",
 
+    "profile.tittle" : "Perfil",
+    "profile.description": "Administra tus datos y seguridad",
+    "profile.btn.edit": "EDITAR",
+    "profile.btn.cancel": "CANCELAR",
+    "profile.btn.save": "GUARDAR",
+    "profile.form.tittle": "DATOS DE PERFIL",
+    "profile.form.description" : "Actualiza tu fotografía e información personal",
+    "profile.input.name": "NOMBRE",
+    "profile.input.lastName" : "APELLIDO PATERNO",
+    "profile.input.email" : "CORREO ELECTRÓNICO",
+    "profile.btn.comfirm": "ENVIAR CONFIRMACIÓN",
+    "profile.image.tittle": "IMAGEN DE PERFIL",
+    "profile.image.button": "CAMBIAR IMAGEN",
+    "profile.security.tittle": "SEGURIDAD",
+    "profile.security.description": "Te recomendamos actualizar tu contraseña periodicamente",
+    "profile.password.tittle": "Cambiar contraseña",
+    "profile.password.description": "Te mandaremos un link para reestablecer tu contraseña",
+    "profile.password.btn": "REESTABLECER CONTRASEÑA",
     
     "modal.newCollaborator.title":"Nuevo colaborador",
     "modal.newCollaborator.title.data":"Datos",
