@@ -15,7 +15,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        color: #00549D;
+        color: #AEC2D3;
         width: 194px;
         height: 32px;
         margin-left: 16px;
@@ -54,6 +54,7 @@
         margin-left: 10px;
     } */
     .menu-dasboard-row {
+        color: #AEC2D3;
         margin: 20px 0px 20px 0px;
         display: flex;
         flex-direction: row;
@@ -90,11 +91,11 @@
     a {
         font-size: 14px;
         text-decoration: none;
-        color: #323E45;
+        color: #323E45 !important;
         ;
     }
     .iconDashboard{
-        color: #AEC2D3;
+        //color: #AEC2D3;
         margin: 0px 10px 0px;
     }
 

@@ -1,7 +1,6 @@
 import TranslateService from "../../../services/translate-service";
 import Logo from "../../../assets/images/login/Logo.png";
 import iconButtonPlus from "../../../assets/images/dashboard/buttonPlus.png";
-import iconDashboard from "../../../assets/images/dashboard/dashboard.png";
 import imgUser from "../../../assets/images/dashboard/imgUser.png";
 import iconRight from "../../../assets/images/dashboard/iconRight.png";
 import * as Icon from "react-bootstrap-icons";
@@ -22,8 +21,8 @@ export default function MenuDashboard() {
         <div>
           <img src={Logo} className="menu-dashboard-image" alt="" />
         </div>
-        <div className="menu-dashboard-title-content menu-dashboard-active">
-          <img src={iconDashboard} alt="" className="iconDashboard" />
+        <div className="menu-dashboard-title-content  ">
+          <Icon.Grid1x2Fill className="iconDashboard" />
           <div>
             <Link to="/dashboard">{TranslateService.get("dashboard.title")}</Link>
           </div>
@@ -36,7 +35,7 @@ export default function MenuDashboard() {
           <div className="">
             <div className="menu-dasboard-row menu-dashboard-active">
               <div>
-                <Icon.PersonFill className="iconDashboard" />
+                <Icon.PersonFill className="iconDashboard"/>
                 <Link to="/dashboard/collaborators">{TranslateService.get("dashboard.label.collaborators")} </Link>
               </div>
               <div>
